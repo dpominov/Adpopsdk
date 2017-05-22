@@ -13,7 +13,15 @@ Developing for Android API level 14 or higher
 ```
 compile 'com.adpop.adpopsdk:adpopborder:1.1'
 ```
-
+for Maven
+```
+<dependency>
+  <groupId>com.adpop.adpopsdk</groupId>
+  <artifactId>adpopborder</artifactId>
+  <version>1.1</version>
+  <type>pom</type>
+</dependency>
+```
 3 Add lines in Manifest:
 ```
 <uses-permission android:name="android.permission.INTERNET"/>
