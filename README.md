@@ -121,3 +121,11 @@ border = (AdpopBorder) findViewById(R.id.border);
 border.setConfigBanner(R.string.uniqId,R.string.spotId, true);
 border.loadBanner();
 ```
+Do not forget to destroy the instance
+```
+@Override
+    protected void onDestroy() {
+        super.onDestroy();
+        border.closeAdpop();
+    }
+```
