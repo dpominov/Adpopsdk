@@ -11,7 +11,7 @@ Developing for Android API level 14 or higher
 
 2 Add line in project dependencies:
 ```
-compile 'com.adpop.adpopsdk:adpopborder:1.0'
+compile 'com.adpop.adpopsdk:adpopborder:1.1'
 ```
 
 3 Add lines in Manifest:
