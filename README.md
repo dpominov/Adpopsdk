@@ -18,7 +18,7 @@ for Maven
 <dependency>
   <groupId>com.adpop.adpopsdk</groupId>
   <artifactId>adpopborder</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
