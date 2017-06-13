@@ -11,14 +11,14 @@ Developing for Android API level 14 or higher
 
 2 Add line in project dependencies:
 ```
-compile 'com.adpop.adpopsdk:adpopborder:1.0.1'
+compile 'com.adpop.adpopsdk:adpopborder:1.0.2'
 ```
 for Maven
 ```
 <dependency>
   <groupId>com.adpop.adpopsdk</groupId>
   <artifactId>adpopborder</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ```
@@ -31,21 +31,17 @@ for Maven
 4 Add Banner to layout:
 
 ```
-<com.adpop.adpopsdk.adborder.AdpopBorder
-
+<com.adpop.sdkadpop.adborder.AdpopBorder
    android:id="@+id/border"
-
    android:layout_width="wrap_content"
-
    android:layout_height="wrap_content">
-
-</com.adpop.adpopsdk.adborder.AdpopBorder>
+</com.adpop.sdkadpop.adborder.AdpopBorder>
 ```
 5 Load Banner in Activity class:
 ```
 AdpopBorder border = (AdpopBorder) findViewById(R.id.border);
-border.setConfigBanner("uniqId","spotId",  true);
-border.loadBanner();
+border.setConfigBaner("uniqId","spotId",  true);
+border.loadBaner();
 ```
 
 uniqId - unique id publisher
