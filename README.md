@@ -22,11 +22,17 @@ for Maven
   <type>pom</type>
 </dependency>
 ```
+Adpopsdk uses OKHttp3 in work, please check dependencies in your project, it must to include: 
+```
+compile 'com.squareup.okhttp3:okhttp:3.+'
+```
 3 Add lines in Manifest:
 ```
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 ```
+
+
 
 4 Add Banner to layout:
 
@@ -40,13 +46,15 @@ for Maven
 5 Load Banner in Activity class:
 ```
 AdpopBorder border = (AdpopBorder) findViewById(R.id.border);
-border.setConfigBaner("uniqId","spotId",  true);
+border.setConfigBaner("uniqId","spotId","idDomain",true);
 border.loadBaner();
 ```
 
 uniqId - unique id publisher
 
 spotId - uniq id spot
+
+idDomain - id domain network
 
 true/false - Show/not close button
 
@@ -76,8 +84,7 @@ border.setAdListener(new AdBorderListener() {
 });
 
 ```
-
-or you can close Banner:
+closeAdpop() method will destroy instance^
 
 ```
 border.closeAdpop();
@@ -93,7 +100,7 @@ border.closeAdpop();
 
 ```
 AdpopBorder border = new AdpopBorder(this);
-border.setConfigBaner("uniqId","spotId",false);
+border.setConfigBaner("uniqId","spotId","idDomain",true);
 border.loadBaner();
 
 
@@ -101,34 +108,4 @@ RelativeLayout.LayoutParams adParams = new RelativeLayout.LayoutParams(RelativeL
 adParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
 adParams.addRule(RelativeLayout.CENTER_IN_PARENT);
 layout.addView(border, adParams);
-```
-
-# Testing
-
-For testing you can use:
-
-uniqId = adsn-pub-273000048
-
-spotId = 1075
-
-Size of the test banner = 320*50
-
-Good practice is to place the key value in strings.xml, e.g.
-
-```
-<string name="uniqId">adsn-pub-273000048</string>
-<string name="spotId ">1075</string>
-```
-```
-border = (AdpopBorder) findViewById(R.id.border);
-border.setConfigBanner(R.string.uniqId,R.string.spotId, true);
-border.loadBanner();
-```
-Do not forget to destroy the instance
-```
-@Override
-    protected void onDestroy() {
-        super.onDestroy();
-        border.closeAdpop();
-    }
 ```
