@@ -1,11 +1,11 @@
 # Adpopsdk
-Library for add banner in android application
+Library for add advertising in android application
+Atention! All information to belongs to AdpopBorder module, which is a bottom banner
 
 # Prerequisites
 Developing for Android API level 14 or higher
 
 # Implementation path
-
 
 1 Connect your app in personal cabinet / create account
 
@@ -31,8 +31,6 @@ compile 'com.squareup.okhttp3:okhttp:3.+'
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 ```
-
-
 
 4 Add Banner to layout:
 
