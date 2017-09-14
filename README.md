@@ -1,5 +1,6 @@
 # Adpopsdk
 Library for add advertising in android application
+
 Atention! All information to belongs to AdpopBorder module, which is a bottom banner
 
 # Prerequisites
