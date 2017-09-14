@@ -13,15 +13,8 @@ Developing for Android API level 14 or higher
 ```
 compile 'com.adpop.adpopsdk:adpopborder:1.0.2'
 ```
-for Maven
-```
-<dependency>
-  <groupId>com.adpop.adpopsdk</groupId>
-  <artifactId>adpopborder</artifactId>
-  <version>1.0.2</version>
-  <type>pom</type>
-</dependency>
-```
+or download [Jar](https://github.com/ColiseumChaoS/Adpopsdk/blob/master/adpopsdk.jar)
+
 Adpopsdk uses OKHttp3 in work, please check dependencies in your project, it must to include: 
 ```
 compile 'com.squareup.okhttp3:okhttp:3.+'
