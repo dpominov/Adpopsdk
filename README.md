@@ -10,11 +10,7 @@ Developing for Android API level 14 or higher
 
 1 Connect your app in personal cabinet / create account
 
-2 Add line in project dependencies:
-```
-compile 'com.adpop.adpopsdk:adpopborder:1.0.2'
-```
-or download [Jar](https://github.com/ColiseumChaoS/Adpopsdk/raw/master/adpopsdk.jar)
+2 download [Jar](https://github.com/ColiseumChaoS/Adpopsdk/raw/master/adpopsdk.jar)
 
 Adpopsdk uses OKHttp3 in work, please check dependencies in your project, it must to include: 
 ```
